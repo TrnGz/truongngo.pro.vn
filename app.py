@@ -3,6 +3,14 @@ import os
 from config import Config
 from routes import register_blueprints
 from utils.database import init_db
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return render_template("index.html")
+
 app = Flask(__name__)
 def create_app():
     

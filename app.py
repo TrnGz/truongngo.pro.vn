@@ -3,9 +3,9 @@ import os
 from config import Config
 from routes import register_blueprints
 from utils.database import init_db
-
+app = Flask(__name__)
 def create_app():
-    app = Flask(__name__)
+    
     app.config.from_object(Config)
     
     # Ensure upload folder exists

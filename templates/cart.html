@@ -52,13 +52,13 @@
 				<a href="/removeFromCart?productId={{row[0]}}">Xóa</a>
 			</div>
 			<div id="itemPrice">
-				${{row[2]}}
+				{{row[2]}} VNĐ
 			</div>
 		</div>
 		{% endfor %}
 		<hr id="seperator">
 		<div id="total">
-			<span id="subtotal">Tổng tiền</span> : ${{totalPrice}}
+			<span id="subtotal">Tổng tiền</span> : {{totalPrice}} VNĐ
 		</div>
 	</div>
 </div>
